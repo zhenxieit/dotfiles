@@ -1,0 +1,17 @@
+#global loc ~/.gitconfig
+#global loc WinXP C:\Documents and Settings\<user_name>\.gitconfig
+#global loc Windows Vista+ C:\Users\<user_name>\.gitconfig
+[user]
+	name = Zhen Xie
+[core]
+	autocrlf = input
+	safecrlf = true
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  add-commit = !git add -A && git commit
