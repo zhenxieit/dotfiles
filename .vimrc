@@ -82,16 +82,11 @@ set laststatus=2
 set noshowmode        "Get rid of default mode indicator
 let g:airline_powerline_fonts = 1 " Use powerline symbols
 let g:airline_theme='light'
+let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+let g:airline#extensions#tabline#fnamedmod = ':t' " Show just the filename
 " End of airline configs
 
 set splitbelow        " Horizontal splits open below current file
 set splitright        " Vertical splits open to the right of the current file
 set wildmode=longest,list " Pressing <Tab> shows command suggestions 
-
-" Mapping to transverse buffer list
-nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> ]b :bpnext<CR>
-nnoremap <silent> [B :bfirst<CR>
-nnoremap <silent> ]B :blast<CR>
-
 
