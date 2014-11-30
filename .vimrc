@@ -76,6 +76,7 @@ set ic                "Ignore Case during searches
 set autoindent        "start new line at the same indentation level
 set cmdheight=1       "The commandbar height
 set showmatch         "Show matching bracets when text indicator is over them
+set t_Co=256
 
 " VIM airline config
 set laststatus=2
