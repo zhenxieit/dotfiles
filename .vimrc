@@ -15,6 +15,8 @@ Plugin 'gmarik/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'bling/vim-airline'
+
 "Plugin 'tpope/vim-fugitive'
 " Color schemes
 " badwolf color scheme
@@ -49,6 +51,38 @@ filetype plugin indent on     " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line 
 
-:colorscheme badwolf
-:syntax on
-:set number
+colorscheme badwolf
+syntax on
+set number
+set backspace=indent,eol,start
+set history=50
+set ruler
+set showcmd
+set incsearch
+set expandtab
+set tabstop=4
+set shiftwidth=4      "set indentation to 4 spaces
+set hlsearch          "highlight search terms
+set ic                "Ignore Case during searches
+set autoindent        "start new line at the same indentation level
+set cmdheight=1       "The commandbar height
+set showmatch         "Show matching bracets when text indicator is over them
+
+" VIM airline config
+set laststatus=2
+set noshowmode        "Get rid of default mode indicator
+let g:airline_powerline_fonts = 1 " Use powerline symbols
+let g:airline_theme='light'
+" End of airline configs
+
+set splitbelow        " Horizontal splits open below current file
+set splitright        " Vertical splits open to the right of the current file
+set wildmode=longest,list " Pressing <Tab> shows command suggestions 
+
+" Mapping to transverse buffer list
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bpnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
+
