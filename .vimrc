@@ -1,6 +1,15 @@
+" Setting up Vundle - the vim plugin bundler
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle..."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    let iCanHazVundle=0
+endif
 set nocompatible
 filetype off
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
