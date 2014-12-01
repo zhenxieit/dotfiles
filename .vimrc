@@ -91,3 +91,4 @@ set splitbelow        " Horizontal splits open below current file
 set splitright        " Vertical splits open to the right of the current file
 set wildmode=longest,list " Pressing <Tab> shows command suggestions 
 
+nnoremap <CR> :noh<CR><CR>
