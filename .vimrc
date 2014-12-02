@@ -63,6 +63,7 @@ filetype plugin indent on     " required
 colorscheme badwolf
 syntax on
 set number
+set modelines=0
 set backspace=indent,eol,start
 set history=50
 set ruler
@@ -72,11 +73,21 @@ set expandtab
 set tabstop=4
 set shiftwidth=4      "set indentation to 4 spaces
 set hlsearch          "highlight search terms
-set ic                "Ignore Case during searches
+set softtabstop=4
 set autoindent        "start new line at the same indentation level
 set cmdheight=1       "The commandbar height
 set showmatch         "Show matching bracets when text indicator is over them
+set ignorecase
+set smartcase
+set wildmenu
+set cursorline
 set t_Co=256
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
+set undofile
+nnoremap ; :
 
 " VIM airline config
 set laststatus=2
