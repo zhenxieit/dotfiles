@@ -64,10 +64,12 @@ colorscheme badwolf
 syntax on
 set number
 set modelines=0
+set scrolloff=5
 set backspace=indent,eol,start
 set history=50
 set ruler
 set showcmd
+set hidden
 set incsearch
 set expandtab
 set tabstop=4
